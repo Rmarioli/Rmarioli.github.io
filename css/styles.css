@@ -1,0 +1,171 @@
+/*--------------------Fuentes Importadas----------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&display=swap');
+
+/*--------------------Propiedades Generales-------------------*/
+
+*{
+	color: #f7f8fc;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', 'sans-serif';
+	text-shadow: 0 0 2px #fff538cc;
+}
+
+body {
+	background-color: #010300;
+}
+/*---------------------Propiedades del Header-----------------*/
+
+
+.flex-header{
+	display: flex;
+	width: 100vw;
+	height: 30vh;
+}
+
+
+
+.header-img{
+	height: 30vh;
+	flex-basis: 10vw;
+	object-fit: contain;
+	object-position: left;
+	background-color: #5a7f78;
+}
+
+.header-main{
+	flex-basis: 90vw;
+	height: 30vh;
+	background-color: #5a7f78;
+	display: flex;
+	flex-direction: column;
+}
+
+
+
+.header-name{
+	flex-basis: 20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	text-align: center;
+}
+
+.header-contacts{
+	flex-basis: 10vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header-name h1{
+	font-size: 5.5vw;
+	font-family: 'Merriweather', 'sans-serif';
+	text-underline-position: 20px;
+}
+
+.header-name h2{
+	font-size: 2.5vw;
+}
+
+.header-contacts ul{
+	display: flex;
+	justify-content: space-around;
+}
+
+.header-contacts ul li{
+	list-style: none;
+	font-size: 2vw;
+	padding: 10px;
+	border-radius: 5px;
+	transition: all .3s linear;
+
+}
+
+.header-contacts ul li:hover{
+	background-color: #314c53;
+}
+
+
+.header-contacts ul li a{
+	text-decoration: none;
+}
+
+.header-contacts ul li a svg{
+	font-size: 2vw;
+	padding-right: 10px;
+}
+
+/*---------------------Propiedades del Main---------------------*/
+
+.flex-main{
+	display: flex;
+	height: 70vh;
+	justify-content: space-evenly;
+	padding: 1vw 0vw;
+	flex-wrap: wrap;
+}
+
+.main-item{
+	background-color: #5a7f78;
+	margin: 0;
+	margin-bottom: 10px;
+	padding: 2vw;
+	flex-basis: 32vw;
+	height: 65vh;
+	font-size: 2vw;
+	text-align: center;
+	position: relative;
+	overflow: auto;
+	min-width: 300px;
+	box-shadow: inset 0 -30px 20px 5px #010300;
+	border-radius: 5px;
+}
+
+.acerca-de-mi{
+	text-align: justify;
+	text-justify: inter-word;
+}
+.acerca-de-mi h3{
+	text-align: center;
+}
+
+.main-habilidades{
+	display: flex;
+	flex-direction: column;
+}
+
+.main-item h3{
+	font-size: 2.5vw;
+	border-bottom: 3px solid #fff538;
+	margin: .5vw;
+	padding: 10px 0;
+}
+
+.main-item p{
+	font-size: 3vh;
+	margin: .5vw;
+	padding-bottom: 5px;
+	border-bottom: 3px solid #fff538;
+}
+
+.habilidades-item{
+	display: flex;
+	align-content: center;
+	justify-content: space-evenly;
+}
+
+.habilidades-item .icono{
+	display: flex;
+	flex-direction: column;
+	width: 10vw;
+	margin-right: 5px;
+}
+
+.habilidades-item .icono svg{
+	font-size: 3vw;
+}
+
+
